@@ -7,6 +7,6 @@ $(function() {
         var jsText = $('#js-text').val();
         localStorage.setItem('js-inserter-js-text', jsText);
 
-        alert("設定を保存しました。次に開くページからjsが挿入されるようになります。");
+        alert("設定を保存しました。右上に追加された赤いボタンをタップし、緑にするとjsの挿入が始まります。");
     });
 });
