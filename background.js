@@ -18,7 +18,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, callback) {
 
 // ボタンによってjsの挿入トリガーする
 var buttonState = false;
-disableBrowserAction();
 
 function disableBrowserAction() {
     chrome.browserAction.setIcon({ path: "imgs/inactive.png" });
@@ -28,6 +27,7 @@ function disableBrowserAction() {
 function enableBrowserAction() {
     chrome.browserAction.setIcon({ path: "imgs/active.png" });
     localStorage.setItem('js-inserter-is-insert-js', true);
+    chrome.tabs.executeScript(null, { file: "contentscript.js" });
 }
 
 function updateState() {
@@ -41,3 +41,4 @@ function updateState() {
 }
 
 chrome.browserAction.onClicked.addListener(updateState);
+chrome.history.onVisited.addListener(disableBrowserAction);

@@ -4,12 +4,13 @@
   "name": "JS Inserter",
   "description": "閲覧中のサイトに対して特定のタグを挿入します。トラッキングタグのテストなどにご利用ください。",
 
-  "version": "0.0.7.2",
+  "version": "0.0.7.3",
 
   "permissions": [
       "webRequest",
       "http://*/*",
-      "https://*/*"
+      "https://*/*",
+      "history"
   ],
 
   "content_scripts": [
