@@ -4,7 +4,7 @@
   "name": "JS Inserter",
   "description": "閲覧中のサイトに対して特定のタグを挿入します。トラッキングタグのテストなどにご利用ください。",
 
-  "version": "0.0.3",
+  "version": "0.0.7.2",
 
   "permissions": [
       "webRequest",
@@ -15,7 +15,7 @@
   "content_scripts": [
       {
           "matches": ["http://*/*", "https://*/*"],
-          "js": ["lib/jquery.min.js", "contentscript.js"]
+          "js": ["lib/jquery.min.js"]
       }
   ],
 

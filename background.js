@@ -16,20 +16,18 @@ chrome.runtime.onMessage.addListener(function(request, sender, callback) {
 });
 
 
-// ボタンによってjsの挿入をon/offする
+// ボタンによってjsの挿入トリガーする
 var buttonState = false;
+disableBrowserAction();
 
 function disableBrowserAction() {
     chrome.browserAction.setIcon({ path: "imgs/inactive.png" });
     localStorage.removeItem('js-inserter-is-insert-js');
-    chrome.tabs.executeScript(null, { file: "show_inactive_alert.js" });
 }
 
 function enableBrowserAction() {
     chrome.browserAction.setIcon({ path: "imgs/active.png" });
     localStorage.setItem('js-inserter-is-insert-js', true);
-    chrome.tabs.executeScript(null, { file: "show_active_alert.js" });
-    chrome.tabs.executeScript(null, { file: "contentscript.js" });
 }
 
 function updateState() {
