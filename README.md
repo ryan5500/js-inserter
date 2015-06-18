@@ -29,7 +29,7 @@ jsコード差し込みのon/offを、chrome拡張のボタンで切り替えが
 
 設定画面内で、挿入するjsのコードを記入し保存ボタンを押すと、挿入するjsのコードが設定された状態となる。
 
-![設定画面 表示例](/readme-imgs/setting.png?raw=true "設定画面 表示例")
+![設定画面 表示例](/readme-imgs/setting-page.png?raw=true "設定画面 表示例")
 
 
 ## Activate/Deactivate
