@@ -16,12 +16,20 @@ jsコード差し込みのon/offを、chrome拡張のボタンで切り替えが
 
 インストールが完了すると、本Chrome拡張のボタン(小さい赤い丸)が、ブラウザのメニューバーに表示される。
 
+![本Chrome拡張のボタン](/readme-imgs/browser-action-icon.png?raw=true "本Chrome拡張のボタン")
+
 
 ## Configure
 
 本Chrome Extensionのインストールが完了すると、Chromeの設定画面、"拡張機能"タブ内にJs Inserterと表示される。  
 その中に、"オプション"というリンクがあるので、それをクリックし設定画面を開く。
+
+![設定画面へのリンク](/readme-imgs/option-page-link.png?raw=true "設定画面へのリンク")
+
+
 設定画面内で、挿入するjsのコードを記入し保存ボタンを押すと、挿入するjsのコードが設定された状態となる。
+
+![設定画面 表示例](/readme-imgs/setting.png?raw=true "設定画面 表示例")
 
 
 ## Activate/Deactivate
